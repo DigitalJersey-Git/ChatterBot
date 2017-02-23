@@ -12,6 +12,8 @@
 		0F5E43CE1E5F5C0500E93195 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F5E43CC1E5F5C0500E93195 /* Main.storyboard */; };
 		0F5E43D01E5F5C0500E93195 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F5E43CF1E5F5C0500E93195 /* Assets.xcassets */; };
 		0F5E43D31E5F5C0500E93195 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F5E43D11E5F5C0500E93195 /* LaunchScreen.storyboard */; };
+		0F5E43DB1E5F5DA800E93195 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5E43DA1E5F5DA800E93195 /* Global.swift */; };
+		263A16923C5896C4126F85DD /* Pods_ChatterBot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69A60C5DC60770488C5C40FC /* Pods_ChatterBot.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,10 @@
 		0F5E43CF1E5F5C0500E93195 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0F5E43D21E5F5C0500E93195 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0F5E43D41E5F5C0500E93195 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0F5E43DA1E5F5DA800E93195 /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		69A60C5DC60770488C5C40FC /* Pods_ChatterBot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChatterBot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2834040B81A83FA08E6B92E /* Pods-ChatterBot.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatterBot.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChatterBot/Pods-ChatterBot.debug.xcconfig"; sourceTree = "<group>"; };
+		C745E06F9770757C7983ED1D /* Pods-ChatterBot.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatterBot.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChatterBot/Pods-ChatterBot.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				263A16923C5896C4126F85DD /* Pods_ChatterBot.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		07DFD3457BFDBBE31E1F66BD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				69A60C5DC60770488C5C40FC /* Pods_ChatterBot.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		0F5E43BC1E5F5C0500E93195 = {
 			isa = PBXGroup;
 			children = (
 				0F5E43C71E5F5C0500E93195 /* ChatterBot */,
 				0F5E43C61E5F5C0500E93195 /* Products */,
+				5886819EB5AFB06063BC74E0 /* Pods */,
+				07DFD3457BFDBBE31E1F66BD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,11 +74,21 @@
 				0F5E43C81E5F5C0500E93195 /* AppDelegate.swift */,
 				0F5E43CA1E5F5C0500E93195 /* ViewController.swift */,
 				0F5E43CC1E5F5C0500E93195 /* Main.storyboard */,
+				0F5E43DA1E5F5DA800E93195 /* Global.swift */,
 				0F5E43CF1E5F5C0500E93195 /* Assets.xcassets */,
 				0F5E43D11E5F5C0500E93195 /* LaunchScreen.storyboard */,
 				0F5E43D41E5F5C0500E93195 /* Info.plist */,
 			);
 			path = ChatterBot;
+			sourceTree = "<group>";
+		};
+		5886819EB5AFB06063BC74E0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B2834040B81A83FA08E6B92E /* Pods-ChatterBot.debug.xcconfig */,
+				C745E06F9770757C7983ED1D /* Pods-ChatterBot.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0F5E43D71E5F5C0500E93195 /* Build configuration list for PBXNativeTarget "ChatterBot" */;
 			buildPhases = (
+				A710E9389A0A77B239EDA4F0 /* [CP] Check Pods Manifest.lock */,
 				0F5E43C11E5F5C0500E93195 /* Sources */,
 				0F5E43C21E5F5C0500E93195 /* Frameworks */,
 				0F5E43C31E5F5C0500E93195 /* Resources */,
+				0C451E6CA3B6900FC58E92B6 /* [CP] Embed Pods Frameworks */,
+				69FAA96004F682E1BC426353 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -132,6 +162,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0C451E6CA3B6900FC58E92B6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ChatterBot/Pods-ChatterBot-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		69FAA96004F682E1BC426353 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ChatterBot/Pods-ChatterBot-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A710E9389A0A77B239EDA4F0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0F5E43C11E5F5C0500E93195 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -139,6 +217,7 @@
 			files = (
 				0F5E43CB1E5F5C0500E93195 /* ViewController.swift in Sources */,
 				0F5E43C91E5F5C0500E93195 /* AppDelegate.swift in Sources */,
+				0F5E43DB1E5F5DA800E93195 /* Global.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +336,7 @@
 		};
 		0F5E43D81E5F5C0500E93195 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2834040B81A83FA08E6B92E /* Pods-ChatterBot.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2FX3AB9EPS;
@@ -270,6 +350,7 @@
 		};
 		0F5E43D91E5F5C0500E93195 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C745E06F9770757C7983ED1D /* Pods-ChatterBot.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2FX3AB9EPS;
@@ -300,6 +381,7 @@
 				0F5E43D91E5F5C0500E93195 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
