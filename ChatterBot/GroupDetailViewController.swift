@@ -10,13 +10,22 @@ import UIKit
 
 class GroupDetailViewController: UIViewController {
 
+    @IBOutlet weak var messageUserText: UITextView!
+    @IBOutlet weak var submitButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        messageUserText!.layer.borderWidth = 1
+        messageUserText!.layer.cornerRadius = 20
+        messageUserText!.layer.borderColor = UIColor.lightGray.cgColor
 
         print(testString)
     }
     
     var testString = ""
+    
+    
 
 
 }

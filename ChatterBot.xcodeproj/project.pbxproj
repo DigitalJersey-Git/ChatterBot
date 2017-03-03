@@ -15,7 +15,7 @@
 		0F5E43DB1E5F5DA800E93195 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5E43DA1E5F5DA800E93195 /* Global.swift */; };
 		0F8DF5CB1E64A96400A26531 /* GroupListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8DF5CA1E64A96400A26531 /* GroupListViewController.swift */; };
 		0F8DF5CD1E64B1DD00A26531 /* GroupDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8DF5CC1E64B1DD00A26531 /* GroupDetailViewController.swift */; };
-		0F8DF5CF1E64BC5700A26531 /* GroupCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8DF5CE1E64BC5700A26531 /* GroupCellTableViewCell.swift */; };
+		0F8DF5CF1E64BC5700A26531 /* groupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8DF5CE1E64BC5700A26531 /* groupCell.swift */; };
 		263A16923C5896C4126F85DD /* Pods_ChatterBot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69A60C5DC60770488C5C40FC /* Pods_ChatterBot.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,7 +30,7 @@
 		0F5E43DA1E5F5DA800E93195 /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 		0F8DF5CA1E64A96400A26531 /* GroupListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupListViewController.swift; sourceTree = "<group>"; };
 		0F8DF5CC1E64B1DD00A26531 /* GroupDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupDetailViewController.swift; sourceTree = "<group>"; };
-		0F8DF5CE1E64BC5700A26531 /* GroupCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupCellTableViewCell.swift; sourceTree = "<group>"; };
+		0F8DF5CE1E64BC5700A26531 /* groupCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = groupCell.swift; sourceTree = "<group>"; };
 		69A60C5DC60770488C5C40FC /* Pods_ChatterBot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChatterBot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2834040B81A83FA08E6B92E /* Pods-ChatterBot.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatterBot.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChatterBot/Pods-ChatterBot.debug.xcconfig"; sourceTree = "<group>"; };
 		C745E06F9770757C7983ED1D /* Pods-ChatterBot.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatterBot.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChatterBot/Pods-ChatterBot.release.xcconfig"; sourceTree = "<group>"; };
@@ -80,7 +80,7 @@
 				0F5E43C81E5F5C0500E93195 /* AppDelegate.swift */,
 				0F5E43CA1E5F5C0500E93195 /* SignInViewController.swift */,
 				0F5E43CC1E5F5C0500E93195 /* Main.storyboard */,
-				0F8DF5CE1E64BC5700A26531 /* GroupCellTableViewCell.swift */,
+				0F8DF5CE1E64BC5700A26531 /* groupCell.swift */,
 				0F8DF5CA1E64A96400A26531 /* GroupListViewController.swift */,
 				0F8DF5CC1E64B1DD00A26531 /* GroupDetailViewController.swift */,
 				0F5E43DA1E5F5DA800E93195 /* Global.swift */,
@@ -227,7 +227,7 @@
 				0F8DF5CB1E64A96400A26531 /* GroupListViewController.swift in Sources */,
 				0F5E43CB1E5F5C0500E93195 /* SignInViewController.swift in Sources */,
 				0F8DF5CD1E64B1DD00A26531 /* GroupDetailViewController.swift in Sources */,
-				0F8DF5CF1E64BC5700A26531 /* GroupCellTableViewCell.swift in Sources */,
+				0F8DF5CF1E64BC5700A26531 /* groupCell.swift in Sources */,
 				0F5E43C91E5F5C0500E93195 /* AppDelegate.swift in Sources */,
 				0F5E43DB1E5F5DA800E93195 /* Global.swift in Sources */,
 			);
